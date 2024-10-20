@@ -1,0 +1,16 @@
+.p1 {
+    font-family: "Times New Roman", Times, serif;}
+.p1{color: #023e84}
+head {color: #0077b6}
+body {background-color: #caf0f8;}
+text{color: #023e84}
+link {color: #ADE8FA}
+h1 {color:#023e84}
+a:hover {color: #00B4D8}
+nav ul li a { color: #023e84}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+    nav {background-color: #03045e;}
+body {color: #fb8500}
