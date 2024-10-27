@@ -1,0 +1,34 @@
+body {background-color: #0f118e;}
+body {color: #fb8500}
+a {color: #fb8500;}
+link {color: #ffb703;}
+head {color: #023e84;}
+nav {background-color: #03045e;}
+nav ul li a { color: #fb8500}
+h1, h2, h3, h4, h5, h6 {color: #fb8500;}
+nav {padding: 10px}
+
+.column, .row1 {padding: 20px;
+background-color: aliceblue;
+border-radius: 8px;
+flex: 1;
+margin: 5px}
+
+.form-map-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.form-column, .map-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-column {
+    margin-right: 20px;
+}
