@@ -51,3 +51,19 @@ body {
 
 .p2 {margin-bottom: 20px;}
 .p2 {color: aliceblue;}
+
+.BeraPhoto { max-width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        width: 100%;
+    }
+
+    nav span{
+        display: none;
+    }
+}
