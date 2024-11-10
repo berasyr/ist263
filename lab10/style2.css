@@ -52,7 +52,7 @@ body {
 .p2 {margin-bottom: 20px;}
 .p2 {color: aliceblue;}
 
-.BeraPhoto { max-width: 100%;
+.BeraPhoto { max-width: auto;
     height: auto;
 
 }
