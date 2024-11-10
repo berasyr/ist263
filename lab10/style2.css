@@ -129,3 +129,36 @@ iframe {
     }
 }
 
+.form-map-box {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/* Adjust iframe styling directly if it’s inside the flex container */
+.form-map-box iframe {
+    flex: 1 1 100%; /* Make iframe take full width when wrapped */
+    max-width: 100%;
+    height: auto; /* Ensures responsive height */
+    border: 0;
+}
+
+
+@media (max-width: 768px) {
+    nav a {
+    display: block;
+    width: 100%; /* Set links to take up the full width */
+    padding: 15px 0; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+}
+}
+
+/* Hide the pipe character | within span tags in smaller viewports */
+nav span {
+    display: none;
+}
+
