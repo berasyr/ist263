@@ -1,18 +1,43 @@
-body {background-color: #0f118e;}
-body {color: #fb8500}
-a {color: #fb8500;}
-link {color: #ffb703;}
-head {color: #023e84;}
-nav {background-color: #03045e;}
-nav ul li a { color: #fb8500}
-h1, h2, h3, h4, h5, h6 {color: #fb8500;}
-nav {padding: 10px}
+body {
+    background-color: #0f118e;
+    color: #fb8500;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-.column, .row1 {padding: 20px;
-background-color: aliceblue;
-border-radius: 8px;
-flex: 1;
-margin: 5px}
+a {
+    color: #fb8500;
+}
+
+link {
+    color: #ffb703;
+}
+
+head {
+    color: #023e84;
+}
+
+nav {
+    background-color: #03045e;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #fb8500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fb8500;
+}
+
+.column, .row1 {
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    flex: 1;
+    margin: 5px;
+}
 
 .form-map-box {
     display: flex;
@@ -23,7 +48,7 @@ margin: 5px}
     margin: 5px;
 }
 
-.column map .column {
+.column.map .column {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,30 +60,43 @@ margin: 5px}
     box-sizing: border-box;
 }
 
-
 .form-column {
     margin-right: 20px;
 }
 
-.skills-container {display: flex;
-justify-content: space-between;
-flex-basis: 75%}
-
-.skill{flex: 1; text-align: center;}
-
-.icon {width: 50px; height: auto;}
-aside {background-color: #fcfaf9; border-radius: 11px; flex-basis: 25%; padding: 15px;} 
-.flexbox-2 {display: flex; flex-direction: row; gap: 20px;}
-
-body {
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 75%;
 }
 
-.p2 {margin-bottom: 20px;}
-.p2 {color: aliceblue;}
+.skill {
+    flex: 1;
+    text-align: center;
+}
 
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+aside {
+    background-color: #fcfaf9;
+    border-radius: 11px;
+    flex-basis: 25%;
+    padding: 15px;
+}
+
+.flexbox-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.p2 {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
 
 iframe {
     width: 100%;
@@ -67,16 +105,9 @@ iframe {
     border: 0;
 }
 
-@media (max-width: 600px) {
-    iframe {
-        height: 300px;
-    }
-}
-
 @media (max-width: 768px) {
-    
     nav a {
-        display:block ;
+        display: block;
         width: 100%;
         padding: 15px 0;
         text-align: left;
@@ -88,10 +119,13 @@ iframe {
 }
 
 @media (max-width: 600px) {
+    iframe {
+        height: 300px;
+    }
+
     .form-map-box {
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
     }
 }
-
 
