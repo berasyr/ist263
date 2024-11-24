@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text change</title>
+    <style>
+        #textDiv {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 50px;
+            cursor: pointer;
+            color: black;}
+    </style>
+    <script>
+        function ChangeText() {
+            const textDiv = document.getElementById('textDiv');
+            textDiv.textContent = 'Orange Nation';
+            textDiv.style.color = 'orange'; }
+    </script>
+
+
+</head>
+<body>
+    <div id="textDiv" onclick="ChangeText()">Syracuse University</div>
+</body>
+</html>
+    
+  
