@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-map-box {
     display: flex;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 5px;
