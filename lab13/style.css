@@ -94,7 +94,7 @@ aside {
 }
 
 .p2 {
-    color: aliceblue;
+    color: rgb(255, 240, 240);
     margin-bottom: 20px;
 }
 
@@ -140,6 +140,14 @@ nav ul li {
         padding: 15px 0;
         text-align: left;
     }
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #03045e;
+    padding: 10px;
 }
 
 .sign-in-button {

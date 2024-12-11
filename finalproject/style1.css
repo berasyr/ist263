@@ -7,43 +7,72 @@ body {
 }
 
 nav {
-    background-color: #6096ba;
+    background-color: #a3cef1;
     padding: 10px;
     display: flex;
     justify-content: left;
     gap: 20px;
 }
 
+.featured-article {
+    background: linear-gradient(135deg, #a3cef1, #a3cef1); /* Gradient background for appeal */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Inner spacing */
+    margin: 20px auto; /* Center and add vertical spacing */
+    max-width: 800px; /* Limit width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improve text readability */
+}
+
+.featured-article h2 {
+    font-size: 24px; /* Stand out header */
+    margin-bottom: 15px; /* Add space below the header */
+    text-align: center; /* Center the title */
+    color: #ffffff; /* Ensure it contrasts with the background */
+}
+
+.featured-article p {
+    font-size: 16px; /* Standard size for body text */
+    margin: 0;
+    text-align: justify; /* Align text for clean edges */
+}
+
+.featured-article:hover {
+    transform: scale(1.02); /* Subtle zoom effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
 
 
 .header {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-        }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
 
 .sign-in-button {
-        background-color: #1e3a8a;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s, transform 0.2s;
-        }
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
 
 .sign-in-button:hover {
-        background-color: #fca311;
-        transform: scale(1.05);
+    background-color: #fca311;
+    transform: scale(1.05);
 }
 
 .sign-in-button:active {
-            transform: scale(0.95);
+    transform: scale(0.95);
 }
  
 
@@ -51,7 +80,7 @@ nav {
 
 
 nav a {
-    color: #e7ecef;
+    color: #f9f9f9;
     text-decoration: none;
     font-weight: bold;
 }
@@ -68,7 +97,10 @@ h1, h2 {
 p {
     text-align: center;
     margin: 10px 20px;
+    color: #e7ecef
 }
+
+
 
 .content {
     display: flex;
@@ -138,33 +170,45 @@ table {
     border-collapse: collapse;
     width: 90%;
     max-width: 600px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Softer background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content respects the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    font-family: Arial, sans-serif;
+    text-align: left; /* Align text to the left */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 10px;
+    padding: 15px 20px; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
 }
 
 th {
-    background-color: #1e3a8a;
-    color: white;
+    background-color: #6096ba; /* Accent color for the header */
+    color: white; /* White text for contrast */
+    font-size: 16px;
+    font-weight: bold;
 }
 
-td:nth-child(odd) {
-    background-color: #e7ecef;
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-td:nth-child(even) {
-    background-color: #e7ecef;
+tr:last-child td {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+td {
+    font-size: 14px;
+    color: #333; /* Darker text color for readability */
 }
 
 .featured-article img {
     display: block;
     margin: 0 auto; 
     border-radius: 10px; 
+    text-align: center;
 }
 
 .top-stories {
@@ -179,7 +223,7 @@ td:nth-child(even) {
     border-bottom: 3px solid #fca311;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    color: #a3cef1;
+    color: #fca311;
 }
 
 .story {
@@ -188,14 +232,14 @@ td:nth-child(even) {
 
 .story h3 {
     margin-bottom: 10px;
-    color: #e7ecef;
+    color: #fca311;
     font-size: 20px;
 }
 
 .story p {
     font-size: 16px;
     line-height: 1.6;
-    color: #e7ecef;
+    color: #fca311;
     margin: 0;
 }
 
@@ -257,6 +301,51 @@ td:nth-child(even) {
     }
 }
 
+.landing-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.photo-container {
+    position: relative;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.photo-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.photo-container .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.photo-container:hover .hover-text {
+    opacity: 1; 
+}
+
+.kdjamesphoto {text-align: center;}
 
 
 
