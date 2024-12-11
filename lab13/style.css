@@ -28,7 +28,7 @@ nav ul li a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #fb8500;
+    color: #e7ecef;
 }
 
 .row1 {
@@ -140,4 +140,26 @@ nav ul li {
         padding: 15px 0;
         text-align: left;
     }
+}
+
+.sign-in-button {
+    background-color: #fb8500;
+    color: #e7ecef;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    }
+
+.sign-in-button:hover {
+    background-color: #03045e;
+    transform: scale(1.05);
+}
+
+.sign-in-button:active {
+        transform: scale(0.95);
 }
