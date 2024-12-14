@@ -143,31 +143,5 @@ nav ul li {
 }
 
 
-.header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #03045e;
-    padding: 10px;
-}
 
-.sign-in-button {
-    background-color: #fb8500;
-    color: #e7ecef;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.2s;
-    }
 
-.sign-in-button:hover {
-    background-color: #03045e;
-    transform: scale(1.05);
-}
-
-.sign-in-button:active {
-        transform: scale(0.95);
-}

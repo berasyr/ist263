@@ -262,44 +262,104 @@ td {
     margin-top: 0;
     color: #1e3a8a;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* For tablets */
 @media (max-width: 768px) {
-    .story {
-        flex: 1 1 calc(50% - 20px); /* Two columns on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .story {
-        flex: 1 1 100%; /* One column on very small screens */
-    }
-}
-
-/* Adjust font sizes for smaller screens */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Slightly smaller text for readability */
+    .container {
+        flex-direction: column;
     }
 
-    nav a {
-        font-size: 14px; /* Shrink nav links */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 24px; /* Smaller headers */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    h2 {
-        font-size: 18px;
-    }
-
-    nav {
-        flex-wrap: wrap; /* Allow nav links to wrap on small screens */
+    .menu {
+        flex-direction: column;
         gap: 10px;
     }
 }
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
 
 .landing-photos {
     display: flex;
@@ -347,6 +407,34 @@ td {
 
 .kdjamesphoto {text-align: center;}
 
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #03045e;
+    padding: 10px;
+}
+
+.sign-in-button {
+    background-color: #fb8500;
+    color: #e7ecef;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    }
+
+.sign-in-button:hover {
+    background-color: #03045e;
+    transform: scale(1.05);
+}
+
+.sign-in-button:active {
+        transform: scale(0.95);}
 
 
 
