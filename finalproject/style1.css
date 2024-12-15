@@ -124,7 +124,7 @@ ul {
     padding: 20px;
     border-radius: 10px;
     list-style-type: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #f9f9f9(0, 0, 0, 0.1);
 }
 
 ul li {
