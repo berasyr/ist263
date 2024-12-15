@@ -9,28 +9,34 @@
         <link rel="stylesheet" href="style1.css">
     <head>
 
-    <nav class="navbar">
-        <button class="menu-toggle">☰ Menu</button>
-        <ul class="menu">
-                <li><a href="https://berasyr.github.io/ist263/finalproject/index.html">Home</a></li>
-                <li><a href="https://berasyr.github.io/ist263/finalproject/news.html">News</a></li>
-                <li><a href="https://berasyr.github.io/ist263/finalproject/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        
+    
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <!-- Navigation Menu -->
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="sign-in-button">Sign In</button>
+            </nav>
+    </header>
+    
+
+    <h1>News This Week</h1>
 
     <body>
 
-        <h1>News This Week</h1>
         <section class="landing-photos">
         <div class="photo-container">
             <img src="../images/Kevin_Durant_confronts_LeBron_James_(2015).jpg" alt="kdjamesphoto" width="700" height="auto" style="text-align: center;">
             <div class="hover-text">Rivalry</div>
         </div>
         </section>
-        
-        <button id="theme-switcher">Switch Theme</button>
 
-        
         
         <div class="featured-article">
             <h2>Feature Article: The Evolution of NBA Uniforms</h2>

@@ -8,7 +8,7 @@ body {
 
 nav {
     background-color: #a3cef1;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -50,11 +50,11 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #6096ba;
 }
 
 .sign-in-button {
-    background-color: #1e3a8a;
+    background-color: #a3cef1;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
@@ -62,12 +62,12 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px #a3cef1(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .sign-in-button:hover {
-    background-color: #fca311;
+    background-color: #a3cef1;
     transform: scale(1.05);
 }
 
@@ -80,10 +80,10 @@ nav {
 
 
 nav a {
-    color: #f9f9f9;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-}
+    }
 
 nav a:hover {
     color: #fca311;
@@ -285,7 +285,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #274c77;
 }
 
 .menu {
@@ -411,12 +411,12 @@ body {
 .header {
     display: flex;
     justify-content: flex-end;
-    background-color: #03045e;
+    background-color: #274c77;
     padding: 10px;
 }
 
 .sign-in-button {
-    background-color: #fb8500;
+    background-color: #a3cef1;
     color: #e7ecef;
     font-size: 18px;
     font-weight: bold;
@@ -435,9 +435,3 @@ body {
 
 .sign-in-button:active {
         transform: scale(0.95);}
-
-
-
-
-
-
