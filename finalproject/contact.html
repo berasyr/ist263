@@ -7,6 +7,7 @@
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style1.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     </head>
 
     <header>
@@ -33,16 +34,20 @@
         <p>Feel free to contact me. contact information is below and follow the soical. If you would to contrubite to the website please let me and fill out the form at the buttom</p>
 
         <form action="https://formspree.io/f/xnnakzjv" method="POST">
-            <label for="fname" style="color: #000103;">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname" style="color: #000103;">Last Name:</label><br>
-            <input type="text" id="lname" name="lname">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname" style="color: #000103;">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname" style="color: #000103;">Last Name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </fieldset>
         </form>
 
         <p>How would you like to be contacted:</p>
 
         <form action="https://formspree.io/f/xnnakzjv" method="POST">
             <fieldset>
+                <legend>Personal Information</legend>
                 <input type="radio" id="phone" name="contact method" value="phone">
                 <label for="phone" style="color: #000103;">Phone</label><br>
                 <input type="radio" id="email" name="contact method" value="email">
