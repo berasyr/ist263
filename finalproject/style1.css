@@ -55,7 +55,7 @@ nav {
 
 .sign-in-button {
     background-color: #a3cef1;
-    color: #ffffff;
+    color: #a3cef1;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 20px;
@@ -63,13 +63,13 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px #a3cef1(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.2s;
 }
 
 .sign-in-button:hover {
     background-color: #a3cef1;
     transform: scale(1.05);
 }
+
 
 .sign-in-button:active {
     transform: scale(0.95);
@@ -80,7 +80,7 @@ nav {
 
 
 nav a {
-    color: #ffffff;
+    color: #f1f1f1;
     text-decoration: none;
     font-weight: bold;
     }
@@ -91,7 +91,7 @@ nav a:hover {
 
 h1, h2 {
     text-align: center;
-    color: #e7ecef;
+    color: #6096ba;
 }
 
 p {
@@ -285,7 +285,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #274c77;
+    background-color: #f9f9f9;
 }
 
 .menu {
@@ -417,14 +417,13 @@ body {
 
 .sign-in-button {
     background-color: #a3cef1;
-    color: #e7ecef;
+    color: #f1f1f1;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.2s;
     }
 
@@ -434,4 +433,65 @@ body {
 }
 
 .sign-in-button:active {
-        transform: scale(0.95);}
+    transform: scale(0.95);
+}
+
+
+
+.soical-photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.soical-container { 
+    position: relative;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.soical-container img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+
+.soical-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+
+
+.soical-container .hover-text {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #005fcc;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 1000;
+}
+.skip-link:focus {
+    top: 0;
+}
